@@ -2,17 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-import Drip from '../../Assets/Projects/Drip.png'
-import Crud from '../../Assets/Projects/Crud.png'
-import Ea from '../../Assets/Projects/Ea.png'
-import Amazon from '../../Assets/Projects/Amazon.png'
-import Olx from '../../Assets/Projects/Olx.png'
-import Netflix from '../../Assets/Projects/Netflix.png'
+import Drip from "../../Assets/Projects/Drip.png";
+import Crud from "../../Assets/Projects/Crud.png";
+import Ea from "../../Assets/Projects/Ea.png";
+import Amazon from "../../Assets/Projects/Amazon.png";
+import Olx from "../../Assets/Projects/Olx.png";
+import Netflix from "../../Assets/Projects/Netflix.png";
+import Medico from "../../Assets/Projects/medico.png";
 
 function Projects() {
   return (
@@ -26,6 +22,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Medico}
+              isBlog={false}
+              title="Medico"
+              description="A doctor appointment web application developed using React and the complete MERN stack. Theplatform incorporates features such as a Stripe payment gateway for secure transactions, a responsive UI forseamless user experience across devices, admin functionalities with JWT authentication, and integration withCloudinary for efficient image management. Led the development process to ensure robust functionality and usersatisfaction. This project enhanced skills in React, MERN stack development, UI design, and integration ofthird-party services."
+              ghLink="https://github.com/MNihal7961/Medico"
+              demoLink="https://github.com/MNihal7961/Medico"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Drip}
